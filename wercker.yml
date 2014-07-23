@@ -1,12 +1,12 @@
 ---
-box: hgen/ubuntu-trusty-python3.4@1.0.0
+box: wercker/python
 
 # Build definition
 build:
   steps:
     - virtualenv:
         name: setup virtual environment
-        python_location: /usr/bin/python3.4
+        python_location: /usr/bin/python3.2
 
     - pip-install
     - script:
