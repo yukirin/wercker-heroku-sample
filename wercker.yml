@@ -20,4 +20,5 @@ build:
         code: python -m tornado.test.runtests discover -s tests
 deploy:
     steps:
-        - heroku-deploy
+        - heroku-deploy:
+            key-name: HEROKU_DEPLOY_KEY
