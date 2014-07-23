@@ -18,3 +18,6 @@ build:
     - script:
         name: Run tests
         code: python -m tornado.test.runtests discover -s tests
+deploy:
+    steps:
+        - heroku-deploy
