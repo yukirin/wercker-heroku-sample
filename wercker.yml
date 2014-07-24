@@ -1,12 +1,12 @@
 ---
-box: wercker/python
+box: yukirin/python3.4-werckerbox@0.1.0
 
 # Build definition
 build:
   steps:
     - virtualenv:
         name: setup virtual environment
-        python_location: /usr/bin/python3.2
+        python_location: /usr/bin/python3.4
 
     - pip-install
     - script:
